@@ -13,6 +13,12 @@ The AI-Based Travel Planner is an intelligent travel assistant that helps users 
 ✅ Ticket Price & Rating Estimation – The system intelligently estimates ticket prices and ratings for places.<br>
 ✅ Interactive Web UI – Built using Flask, HTML, CSS, and JavaScript, with clickable place cards that reveal more details like detail description , rating , ticket price on click.<br>
 
+***🔍 Knowledge Graph in Neo4j***<br>
+The system stores travel destinations, places, and their relationships in Neo4j, making retrieval efficient and structured.<br>
+
+📌 Example Neo4j Graph Representation:<br>
+![Neo4j Knowledge Graph](downloads/visualisation(1).png)
+
 ***Tech Stack*** 🛠️<br>
 🔹 Backend: Flask, Neo4j, Python, LangChain<br>
 🔹 Frontend: HTML, CSS, JavaScript<br>

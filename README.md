@@ -48,7 +48,7 @@ GROQ_API_KEY=your_groq_api_key<br>
 ```
 4️⃣ Run the Flask App<br>
 ```
-python app.py
+python main.py
 ```
 Access the app at http://127.0.0.1:5000/ 🌍
 

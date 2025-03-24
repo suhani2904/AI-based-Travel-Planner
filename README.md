@@ -60,10 +60,10 @@ pip install -r requirements.txt
 3️⃣ Set Up Environment Variables<br>
 Create a .env file and add:<br>
 ```
-NEO4J_URI=your_neo4j_uri<br>
-NEO4J_USERNAME=your_neo4j_username<br>
-NEO4J_PASSWORD=your_neo4j_password<br>
-GROQ_API_KEY=your_groq_api_key<br>
+NEO4J_URI=your_neo4j_uri
+NEO4J_USERNAME=your_neo4j_username
+NEO4J_PASSWORD=your_neo4j_password
+GROQ_API_KEY=your_groq_api_key
 ```
 4️⃣ Run the Flask App<br>
 ```

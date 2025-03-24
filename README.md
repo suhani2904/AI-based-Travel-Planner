@@ -19,6 +19,18 @@ The system stores travel destinations, places, and their relationships in Neo4j,
 📌 Example Neo4j Graph Representation:<br>
 ![Neo4j Knowledge Graph](images/Neo4j_knowledge_graph.png)
 
+***🌐 Website Interface***<br>
+The interactive user-friendly web interface allows users to:
+
+Input their destination, budget, days, and preferences
+
+View recommended places with images, ratings, and descriptions
+
+Click on a place to view detailed information with ticket prices
+
+📌 Website UI Example:<br>
+![Website interface](images/website_interface.ing)
+
 ***Tech Stack*** 🛠️<br>
 🔹 Backend: Flask, Neo4j, Python, LangChain<br>
 🔹 Frontend: HTML, CSS, JavaScript<br>

@@ -51,8 +51,8 @@ Click on a place to view detailed information with ticket prices
 1️⃣ Clone the Repository<br>
 ```
 git clone https://github.com/yourusername/AI-Travel-Planner.git
-```
 cd AI-Travel-Planner
+```
 2️⃣ Install Dependencies<br>
 ```
 pip install -r requirements.txt

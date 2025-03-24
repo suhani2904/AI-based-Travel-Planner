@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='places.css') }}">
+    <title>Places in {{ destination }}</title>
+</head>
+<body>
+    <div class="name">
+        <h1>Places in {{ destination }}</h1>
+    </div>
+
+    <div class="places_list">
+        {% for p in places_list %}
+        <div class="place_box" data-description="{{ p['description'] }}" data-ticket="{{ p['ticket'] }}">
+            <img src="{{ p['image'] }}" alt="Place Image">
+            <h2>{{ p['place'] }}</h2>
+            <p>⭐ {{ p['rating'] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Modal for enlarged image and details -->
+    <div id="placeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImg" src="" alt="Place Image">
+            <h2 id="modalTitle"></h2>
+            <p id="modalRating"></p>
+            <p id="modalTicket"></p>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='places.js') }}"></script>
+</body>
+</html>

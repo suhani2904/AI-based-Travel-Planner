@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>AI Travel Planner</title>
+</head>
+<body>
+    <form  action = "/places" , method = "post">
+    <div class="container">
+        <h1>Plan Your Next Trip with AI ✈️</h1>
+        <label style = "color: black; font-weight: bold;">Source : </label>
+        <input type="text" class="search-box" id = "Source" name = "Source" placeholder="Enter your Source...">
+        <label style = "color: black; font-weight: bold;">Destination : </label>
+        <input type="text" class="search-box" id = "destination" name = "destination" placeholder="Enter your destination...">
+        <div class="days">
+            <label>Number of days : </label>
+                <input type = "number" id = "days" name = "days" placeholder="Enter number of days">
+        </div>
+
+        <div class = "budget">
+            <label>Budget :</label>
+            <input type = "text" id = "budget" name = "budget" placeholder="Enter Budget in (INR)">
+        </div>
+
+        <div class="preferences-container">
+            <label class = "pre">Select Your Preferences:</label>
+            <div class = "prefers">
+            
+            <div>
+                <input type="checkbox" id="parks" name="preferences" value="Parks">
+                <label for="Parks">Parks</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="Historical Monuments" name="preferences" value="Historical Monuments">
+                <label for="Historical Monuments">Historical Monuments</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="food" name="preferences" value="Food & Restaurants">
+                <label for="Food & Restaurants">Food & Restaurants</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="zoo" name="preferences" value="Zoo">
+                <label for="Zoo">Zoo</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="beaches" name="preferences" value="Beaches">
+                <label for="Beaches">Beaches</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="adventure" name="preferences" value="Adventure Sports">
+                <label for="Adventure Sports">Adventure Sports</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Temples" name="preferences" value="Temples">
+                <label for="Temples">Temples</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="River & Lakes" name="preferences" value="River & Lakes">
+                <label for="River & Lakes">River & Lakes</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="other" name="preferences" value="other" onchange="toggleOtherInput()">
+                <label for="other">Other</label>
+            
+                <!-- Text input for custom preference (Initially Hidden) -->
+                <input type="text" id="otherText" name="otherText" placeholder="Enter your preference" style="display:none;" oninput="updateOtherValue()">
+            </div>
+            
+    </div>
+        <button class="btn" id = "places" name = "places">Find Best tourists places</button>
+    </div>
+
+</form>
+    <script>
+function toggleOtherInput() {
+    let otherCheckbox = document.getElementById("other");
+    let otherTextInput = document.getElementById("otherText");
+
+    if (otherCheckbox.checked) {
+        otherTextInput.style.display = "inline";  // Show text input
+    } else {
+        otherTextInput.style.display = "none";  // Hide text input
+        otherTextInput.value = ""; // Clear the text input when unchecked
+    }
+}
+
+function updateOtherValue() {
+    let otherCheckbox = document.getElementById("other");
+    let otherTextInput = document.getElementById("otherText");
+
+    if (otherTextInput.value.trim() !== "") {
+        otherCheckbox.value = otherTextInput.value;  // Update checkbox value
+    } else {
+        otherCheckbox.value = "other";  // Default value if text is empty
+    }
+}
+
+
+    </script>
+</body>
+</html>

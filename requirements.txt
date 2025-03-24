@@ -1,0 +1,8 @@
+flask
+langchain 
+langchain-community 
+langchain-groq 
+neo4j
+googlesearch-python 
+python-dotenv
+langchain-neo4j

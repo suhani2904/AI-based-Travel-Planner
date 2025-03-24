@@ -17,7 +17,7 @@ The AI-Based Travel Planner is an intelligent travel assistant that helps users 
 The system stores travel destinations, places, and their relationships in Neo4j, making retrieval efficient and structured.<br>
 
 📌 Example Neo4j Graph Representation:<br>
-![Neo4j Knowledge Graph](downloads/visualisation(1).png)
+![Neo4j Knowledge Graph](images/Neo4j_knowledge_graph.png)
 
 ***Tech Stack*** 🛠️<br>
 🔹 Backend: Flask, Neo4j, Python, LangChain<br>
